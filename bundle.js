@@ -22493,57 +22493,61 @@
 	                { className: "react-footBanner", id: "tang_FootBanner" },
 	                _react2.default.createElement(
 	                    "div",
-	                    { className: "container" },
-	                    _react2.default.createElement(
-	                        "ul",
-	                        null,
-	                        _react2.default.createElement("li", { className: "react-liactive", "data-item": "0" }),
-	                        _react2.default.createElement("li", { "data-item": "1" }),
-	                        _react2.default.createElement("li", { "data-item": "2" })
-	                    ),
+	                    { className: "react-footBanner-bg" },
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "react-footBanner-banner" },
+	                        { className: "container" },
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "react-active" },
-	                            _react2.default.createElement(
-	                                "p",
-	                                null,
-	                                "It is graceful grief and sweet sadness to think of you, but in my heart, there is a kind of soft warmth that can\u2019t be expressed with any choice of words\u3002"
-	                            ),
-	                            _react2.default.createElement(
-	                                "b",
-	                                null,
-	                                "\u2014 Classic"
-	                            )
+	                            "ul",
+	                            null,
+	                            _react2.default.createElement("li", { className: "react-liactive", "data-item": "0" }),
+	                            _react2.default.createElement("li", { "data-item": "1" }),
+	                            _react2.default.createElement("li", { "data-item": "2" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "div",
-	                            null,
+	                            { className: "react-footBanner-banner" },
 	                            _react2.default.createElement(
-	                                "p",
-	                                null,
-	                                "A sad thing about life is that when you meet someone who means a lot to you only to find out in the end that it was never bound to be and you just have to let go."
+	                                "div",
+	                                { className: "react-active" },
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "It is graceful grief and sweet sadness to think of you, but in my heart, there is a kind of soft warmth that can\u2019t be expressed with any choice of words\u3002"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "b",
+	                                    null,
+	                                    "\u2014 Classic"
+	                                )
 	                            ),
 	                            _react2.default.createElement(
-	                                "b",
+	                                "div",
 	                                null,
-	                                "\u2014 Beautiful"
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "div",
-	                            null,
-	                            _react2.default.createElement(
-	                                "p",
-	                                null,
-	                                "Do you understand the feeling of missing someone? It is just like that you will spend along hard time to turn the ice-cold water you have drunk into tears\u3002"
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "A sad thing about life is that when you meet someone who means a lot to you only to find out in the end that it was never bound to be and you just have to let go."
+	                                ),
+	                                _react2.default.createElement(
+	                                    "b",
+	                                    null,
+	                                    "\u2014 Beautiful"
+	                                )
 	                            ),
 	                            _react2.default.createElement(
-	                                "b",
+	                                "div",
 	                                null,
-	                                "\u2014 Future"
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Do you understand the feeling of missing someone? It is just like that you will spend along hard time to turn the ice-cold water you have drunk into tears\u3002"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "b",
+	                                    null,
+	                                    "\u2014 Future"
+	                                )
 	                            )
 	                        )
 	                    )

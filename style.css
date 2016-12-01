@@ -93,6 +93,7 @@
     transition:all linear 0.8s;
 }
 .react-bg{
+	color:#acacac;
     margin-top:120px;
     margin-bottom: 80px;
     background-color: #444853;
@@ -103,7 +104,7 @@
     transition:all linear 0.8s;
 }
 .react-bg>div>div>p{
-    color:#787C87;
+    color:#eee;
     font-size:16px;
 }
 .react-bg>.container{
@@ -253,7 +254,7 @@
     transition:all linear 1s;
 }
 .react-footBanner-banner>div>p{
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     color:#fff;
 }
 .react-footBanner-banner>div>b{
