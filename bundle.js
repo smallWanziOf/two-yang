@@ -21484,7 +21484,7 @@
 	            $(window).scroll(function () {
 	                //PictureContent组件的监听动画
 	                var PictureContentTop = document.getElementById("tang_picture").offsetTop;
-	                var sTop = document.body.scrollTop;
+	                var sTop = document.body.scrollTop || document.documentElement.scrollTop;
 	                var PictureContentresult = PictureContentTop - sTop;
 	                var Wheight = window.innerHeight * 0.8;
 	                if (PictureContentresult <= Wheight) {
@@ -21847,7 +21847,7 @@
 	            $(window).scroll(function () {
 	                //PictureContent组件的监听动画
 	                var PictureBoxTop = document.getElementById("tang_PictureBox").offsetTop;
-	                var sTop = document.body.scrollTop;
+	                var sTop = document.body.scrollTop || document.documentElement.scrollTop;
 	                var PictureBoxresult = PictureBoxTop - sTop;
 	                var Wheight = window.innerHeight * 0.8;
 	                if (PictureBoxresult <= Wheight) {
@@ -22240,7 +22240,7 @@
 	            $(window).scroll(function () {
 	                //Rob Smith + Jean Smith组件的监听动画
 	                var RJSmithTop = document.getElementById("tang_RJSmith").offsetTop;
-	                var sTop = document.body.scrollTop;
+	                var sTop = document.body.scrollTop || document.documentElement.scrollTop;
 	                var RJSmithresult = RJSmithTop - sTop;
 	                var Wheight = window.innerHeight * 0.8;
 	                if (RJSmithresult <= Wheight) {
@@ -22377,7 +22377,7 @@
 	            $(window).scroll(function () {
 	                //Rob Smith + Jean Smith组件的监听动画
 	                var ContactTop = document.getElementById("tang_Contact").offsetTop;
-	                var sTop = document.body.scrollTop;
+	                var sTop = document.body.scrollTop || document.documentElement.scrollTop;
 	                var Contactresult = ContactTop - sTop;
 	                var Wheight = window.innerHeight * 0.8;
 	                if (Contactresult <= Wheight) {
@@ -22446,7 +22446,7 @@
 	        value: function componentDidMount() {
 	            $(window).scroll(function () {
 	                var FootBannerTop = document.getElementById("tang_FootBanner").offsetTop;
-	                var sTop = document.body.scrollTop;
+	                var sTop = document.body.scrollTop || document.documentElement.scrollTop;
 	                var FootBannerresult = FootBannerTop - sTop;
 	                var Wheight = window.innerHeight * 0.8;
 	                if (FootBannerresult <= Wheight) {
@@ -22572,7 +22572,7 @@
 	            $(window).scroll(function () {
 	                //Rob Smith + Jean Smith组件的监听动画
 	                var EndFootTop = document.getElementById("tang_endfoot").offsetTop;
-	                var sTop = document.body.scrollTop;
+	                var sTop = document.body.scrollTop || document.documentElement.scrollTop;
 	                var EndFootresult = EndFootTop - sTop;
 	                var Wheight = window.innerHeight;
 	                if (EndFootresult <= Wheight) {
@@ -22589,7 +22589,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "div",
-	                { className: "react-endfoot", id: "tang_endfoot" },
+	                { className: "react-endfoot container", id: "tang_endfoot" },
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "container" },
@@ -22616,7 +22616,7 @@
 	    _createClass(GoTop, [{
 	        key: "handleClick",
 	        value: function handleClick() {
-	            var nowS = document.body.scrollTop;
+	            var nowS = document.body.scrollTop || document.documentElement.scrollTop;
 	            var timer = setInterval(function () {
 	                nowS -= 10;
 	                window.scrollTo(0, nowS);
@@ -22630,7 +22630,7 @@
 	        key: "componentDidMount",
 	        value: function componentDidMount() {
 	            $(window).scroll(function () {
-	                var scrollP = document.body.scrollTop;
+	                var scrollP = document.body.scrollTop || document.documentElement.scrollTop;
 	                var componentP = document.getElementById("tang_picture").offsetTop;
 	                if (scrollP >= componentP) {
 	                    $(".react-GoTop").css("opacity", 1);
@@ -22655,7 +22655,7 @@
 	                    _react2.default.createElement(
 	                        "li",
 	                        { className: "glyphicon glyphicon-arrow-up", onClick: this.handleClick },
-	                        "HOME"
+	                        "TOP"
 	                    )
 	                )
 	            );
