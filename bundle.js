@@ -21479,12 +21479,12 @@
 	    }
 
 	    _createClass(Container, [{
-	        key: "componentWillMount",
-	        value: function componentWillMount() {
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
 	            var innerH = innerHeight;
 	            if (innerH > 1000) {
 	                (function () {
-	                    $(".Phone-arrow").css("display", "block");
+	                    _reactDom2.default.findDOMNode(document.getElementById("no_cj")).style.display = "block";
 	                    var top = 1;
 	                    var topOpacity = 1;
 	                    var topTimer = setInterval(function () {
@@ -21499,10 +21499,6 @@
 	                    }, 200);
 	                })();
 	            }
-	        }
-	    }, {
-	        key: "componentDidMount",
-	        value: function componentDidMount() {
 	            /*********只能在手机端实现该功能**********/
 	            var nStartY, nStartX, nChangY, nChangX;
 	            document.getElementsByClassName('Phone-arrow')[0].addEventListener('touchstart', function (e) {
@@ -21538,7 +21534,7 @@
 	                null,
 	                _react2.default.createElement(
 	                    "div",
-	                    { className: "Phone-arrow" },
+	                    { className: "Phone-arrow", id: "no_cj" },
 	                    _react2.default.createElement("img", { src: "need_data/images/arrup.png", alt: "" })
 	                ),
 	                _react2.default.createElement(NavHeader, null),
