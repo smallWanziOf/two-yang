@@ -543,11 +543,11 @@ class EndFoot extends React.Component{
         });
     }
     render(){
-        return(
+        /*return(
             <div className="react-endfoot" id="tang_endfoot">
                 <div className="container">This is a React Page @author Tang JianGuo</div>
             </div>
-        )
+        )*/
     }
 }
 /*返回顶部GoTop*/
