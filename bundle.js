@@ -21481,7 +21481,13 @@
 	    _createClass(Container, [{
 	        key: "componentWillMount",
 	        value: function componentWillMount() {
-	            alert(innerHeight);
+	            var innerH = innerHeight;
+	            if (innerH > 1000) {
+	                setTimeout(function () {
+	                    _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.top = "0px";
+	                    _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.opacity = "1";
+	                });
+	            }
 	        }
 	    }, {
 	        key: "componentDidMount",
