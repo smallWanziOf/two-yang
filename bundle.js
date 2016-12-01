@@ -21852,6 +21852,29 @@
 	            return _reactDom2.default.findDOMNode(document.getElementsByClassName(node)[0]);
 	        }
 	    }, {
+	        key: "componentWillMount",
+	        value: function componentWillMount() {
+	            var arr = ["img_1", "img_2", "img_3", "img_4", "img_5", "img_6", "img_7", "img_8", "img_9", "img_10", "img_11", "img_12"];
+	            var me = this;
+	            var innerH = innerHeight;
+	            if (innerH > 1000) {
+	                (function () {
+	                    var timerPhone = setInterval(function () {
+	                        {
+	                            me.animate(arr[i]).style.opacity = "1";
+	                        }
+	                        {
+	                            me.animate(arr[i]).style.bottom = "0";
+	                        }
+	                        i++;
+	                        if (i >= arr.length) {
+	                            clearInterval(timerPhone);
+	                        }
+	                    }, 300);
+	                })();
+	            }
+	        }
+	    }, {
 	        key: "componentDidMount",
 	        value: function componentDidMount() {
 	            var me = this;
@@ -21865,7 +21888,6 @@
 	                    (function () {
 	                        var arr = ["img_1", "img_2", "img_3", "img_4", "img_5", "img_6", "img_7", "img_8", "img_9", "img_10", "img_11", "img_12"];
 	                        var i = 0;
-	                        var innerH = innerHeight;
 	                        var timerPC = setInterval(function () {
 	                            {
 	                                me.animate(arr[i]).style.opacity = "1";
@@ -21878,22 +21900,6 @@
 	                                clearInterval(timerPC);timer = null;
 	                            }
 	                        }, 300);
-	                        if (innerH > 1000) {
-	                            (function () {
-	                                var timerPhone = setInterval(function () {
-	                                    {
-	                                        me.animate(arr[i]).style.opacity = "1";
-	                                    }
-	                                    {
-	                                        me.animate(arr[i]).style.bottom = "0";
-	                                    }
-	                                    i++;
-	                                    if (i >= arr.length) {
-	                                        clearInterval(timerPhone);timer = null;
-	                                    }
-	                                }, 300);
-	                            })();
-	                        }
 	                    })();
 	                }
 	            });
