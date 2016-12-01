@@ -1,0 +1,314 @@
+.header_banner{
+    height:960px;
+    width:100%;
+    background-color: #00b3ee;
+    overflow: hidden;
+}
+.react-banner{
+    position:relative;
+    z-index:-1;
+}
+.navbar{margin-bottom: 0}
+.react-welname{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    margin-top: 500px;
+    opacity:0;
+    z-index:2;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-welname>p{
+    width:800px;
+    color:#fff;
+    font-size:60px;
+    border:8px solid #fff;
+    margin:0 auto;
+}
+.container-fluid .navbar-header a.react-navbar-left{
+    margin-left:20%;
+}
+@media screen and (max-width:1400px) {
+    .react-welname{
+        transition:all linear 1s;
+        display:none;
+    }
+}
+.react-welname-click,.react-welname-arrow{
+    margin:10px 0;
+    color:#fff;
+    font-size:16px;
+    cursor: pointer;
+}
+.react-picture-context{
+    position:relative;
+    margin-top:120px;
+    margin-bottom:80px;
+    font-size:1.8vw;
+    text-align: center;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-picture-hover{
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.react-picture-hover>b{
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0);
+    position:absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    transition: all linear 0.3s;
+}
+.react-picture-hover>b:hover{
+    background-color:rgba(0,0,0,0.6);
+}
+.react-picture-hover>b div{
+    width:100%;
+    height:100%;
+    position: absolute;
+    color:#fff;
+    opacity:0;
+    top:60%;
+    transition: all linear 0.5s;
+}
+.react-picture-hover>b:hover div{
+    top:50%;
+    opacity:1;
+}
+.react-picture-hover>b div p{
+    font-size:1.8vw;
+}
+.img_1,.img_2,.img_3,.img_4,.img_5,.img_6,.img_7,.img_8,.img_9,.img_10,.img_11,.img_12{
+    opacity:0;
+    position:relative;
+    bottom:-50px;
+    transition:all linear 0.8s;
+}
+.react-bg{
+    margin-top:120px;
+    margin-bottom: 80px;
+    background-color: #444853;
+    text-align: center;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-bg>div>div>p{
+    color:#787C87;
+    font-size:16px;
+}
+.react-bg>.container{
+    margin:0 auto;
+    text-align: center;
+}
+.react-bg>.container>div:first-child{
+    padding-top:120px;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-bg>.container>div:last-child{
+    padding:80px 0;
+}
+.react-bg>.container .react-left{
+    display:inline-block;
+    width:40%;
+    float:left;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-bg>.container .react-center{
+    display:inline-block;
+    width:20%;
+    float:left;
+    margin-top:20px;
+    color:#F8AC80;
+    font-size:50px;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+
+.react-bg>.container .react-right{
+    display:inline-block;
+    width:40%;
+    float:right;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+@media screen and (max-width:600px) {
+    .react-bg>.container .react-center{
+        display:none;
+    }
+    .react-bg>.container .react-left,.react-bg>.container .react-right{
+        display:block;
+        width:100%;
+    }
+}
+.react-bg .react-left>b,.react-bg .react-right>b{
+    text-align: left;
+    color:#fff;
+    font-size:30px;
+}
+.react-contact{
+    margin:50px 0;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-contact>.container{
+    text-align: center;
+}
+.react-contact>.container h6{
+    font-weight: 600;
+    margin:20px 0;
+}
+.react-contact>.container h4{
+    font-size: 30px;
+    font-weight:normal;
+    margin:20px 0 40px 0;
+    color:#7D818C;
+    font-family:Microsoft YaHei,Roboto,sans-serif;
+}
+.react-contact>.container h5{
+    font-size: 16px;
+    font-weight:normal;
+    margin:20px 0;
+    color:#9699A2;
+}
+.react-contact>.container>div{
+    font-size: 16px;
+    margin:20px 0;
+    color:#fff;
+    background-color: #F9AD81;
+    padding:15px 10px;
+    transition:all linear 0.3s;
+}
+.react-contact>.container>div:hover{
+    background-color: #F89D69;
+}
+.react-footBanner{
+    height:500px;
+    width:100%;
+    background-image: url("need_data/images/pic_14.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin-bottom:50px;
+    position:relative;
+    opacity:0;
+    top:50px;
+    transition:all linear 0.8s;
+}
+.react-footBanner-banner{
+    overflow: hidden;
+    width:100%;
+    height:500px;
+}
+.react-footBanner>.container{
+    position:relative;
+}
+.react-footBanner ul{
+    position:absolute;
+    list-style:none;
+    padding:0;
+    margin:0;
+    z-index:2;
+    bottom:5%;
+    right:46%;
+}
+.react-footBanner ul li{
+    cursor:pointer;
+    margin:5px;
+    float:left;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background-color:#F9AD81;
+    transition:all linear 0.3s;
+}
+.react-footBanner-banner{
+    position:relative;
+    overflow: hidden;
+}
+.react-footBanner-banner>div{
+    margin-top: 50px;
+    position:absolute;
+    opacity:0;
+    transition:all linear 1s;
+}
+.react-footBanner-banner>div>p{
+    font-size: 2.5vw;
+    color:#fff;
+}
+.react-footBanner-banner>div>b{
+    font-size:1vw;
+    color:#fff;
+}
+.react-footBanner-banner>div.react-active{
+    opacity:1;
+}
+.react-footBanner ul li.react-liactive{
+    background-color:#fff;
+    border:1px solid #F9AD81;
+}
+.react-endfoot{
+    position:relative;
+    bottom:-50px;
+    opacity:0;
+    transition: all linear 1s;
+}
+.react-endfoot>.container{
+    text-align: center;
+    margin-bottom: 50px;
+    transition:all linear 2000s;
+    transform:rotateY(0deg);
+    -ms-transform:rotateY(0deg); 	/* IE 9 */
+    -moz-transform:rotateY(0deg); 	/* Firefox */
+    -webkit-transform:rotateY(0deg); /* Safari ºÍ Chrome */
+    -o-transform:rotateY(0deg); 	/* Opera */
+}
+.react-endfoot div{
+    color:#9699A2;
+    font-size: 1.5vw;
+}
+.react-GoTop{
+    width:40px;
+    opacity: 0;
+    position:fixed;
+    bottom:50px;
+    right:0;
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari ºÍ Chrome */
+    -o-transform:rotate(0deg); 	/* Opera */
+    transition:all linear 1s;
+}
+.react-GoTop ul li{
+    cursor:pointer;
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border-radius: 50%;
+    background-color:#e4393c;
+    float:right;
+}
