@@ -29,7 +29,7 @@
 .container-fluid .navbar-header a.react-navbar-left{
     margin-left:20%;
 }
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1000px) {
     .react-welname{
         transition:all linear 1s;
         display:none;
