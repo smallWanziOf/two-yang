@@ -22581,7 +22581,7 @@
 	                        _reactDom2.default.findDOMNode(document.getElementsByClassName("react-endfoot")[0]).style.opacity = "1";
 	                    });
 	                }
-	                $(".react-endfoot>.container").css("transform", "rotateY(36000deg)");
+	                //$(".react-endfoot>.container").css("transform","rotateY(36000deg)")
 	            });
 	        }
 	    }, {
