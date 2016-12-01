@@ -21479,6 +21479,11 @@
 	    }
 
 	    _createClass(Container, [{
+	        key: "componentWillMount",
+	        value: function componentWillMount() {
+	            alert(innerHeight);
+	        }
+	    }, {
 	        key: "componentDidMount",
 	        value: function componentDidMount() {
 	            $(window).scroll(function () {
