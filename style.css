@@ -29,12 +29,12 @@
 .container-fluid .navbar-header a.react-navbar-left{
     margin-left:20%;
 }
-/*@media screen and (max-width:1000px) {
+@media screen and (max-width:1199) {
     .react-welname{
         transition:all linear 1s;
         display:none;
     }
-}*/
+}
 .react-welname-click,.react-welname-arrow{
     margin:10px 0;
     color:#fff;
