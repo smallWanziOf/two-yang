@@ -13,7 +13,7 @@
     position:absolute;
     width:100%;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 500px;
     opacity:0;
     z-index:2;
     top:50px;
@@ -29,7 +29,7 @@
 .container-fluid .navbar-header a.react-navbar-left{
     margin-left:20%;
 }
-@media screen and (min-width:1400px) {
+@media screen and (max-width:1000px) {
     .react-welname{
         transition:all linear 1s;
         display:none;
@@ -268,6 +268,8 @@
     border:1px solid #F9AD81;
 }
 .react-endfoot{
+    text-align: -webkit-center;
+    text-align: -moz-center;
     position:relative;
     bottom:-50px;
     opacity:0;
@@ -285,7 +287,7 @@
 }
 .react-endfoot div{
     color:#9699A2;
-    font-size: 0.5vw;
+    font-size: 1vw;
 }
 .react-GoTop{
     width:40px;
@@ -311,4 +313,7 @@
     border-radius: 50%;
     background-color:#e4393c;
     float:right;
+}
+.row{
+    margin-top:50px;
 }
