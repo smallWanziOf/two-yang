@@ -21482,12 +21482,8 @@
 	        key: "componentWillMount",
 	        value: function componentWillMount() {
 	            var innerH = innerHeight;
-	            if (innerH > 0) {
+	            if (innerH > 1000) {
 	                (function () {
-	                    setTimeout(function () {
-	                        _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.top = "0px";
-	                        _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.opacity = "1";
-	                    });
 	                    $(".Phone-arrow").css("display", "block");
 	                    var top = 1;
 	                    var topOpacity = 1;
