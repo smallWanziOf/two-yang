@@ -21482,16 +21482,44 @@
 	        key: "componentWillMount",
 	        value: function componentWillMount() {
 	            var innerH = innerHeight;
-	            if (innerH > 1000) {
-	                setTimeout(function () {
-	                    _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.top = "0px";
-	                    _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.opacity = "1";
-	                });
+	            if (innerH > 0) {
+	                (function () {
+	                    setTimeout(function () {
+	                        _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.top = "0px";
+	                        _reactDom2.default.findDOMNode(document.getElementsByClassName("react-picture-context")[0]).style.opacity = "1";
+	                    });
+	                    $(".Phone-arrow").css("display", "block");
+	                    var top = 1;
+	                    var topOpacity = 1;
+	                    var topTimer = setInterval(function () {
+	                        top++;
+	                        topOpacity -= 0.1;
+	                        $(".Phone-arrow>img").css("bottom", top + "%");
+	                        $(".Phone-arrow>img").css("opacity", topOpacity);
+	                        if (top >= 10) {
+	                            top = 0;
+	                            topOpacity = 1;
+	                        }
+	                    }, 200);
+	                })();
 	            }
 	        }
 	    }, {
 	        key: "componentDidMount",
 	        value: function componentDidMount() {
+	            /*********只能在手机端实现该功能**********/
+	            var nStartY, nStartX, nChangY, nChangX;
+	            document.getElementsByClassName('Phone-arrow')[0].addEventListener('touchstart', function (e) {
+	                nStartY = e.targetTouches[0].pageY;
+	                nStartX = e.targetTouches[0].pageX;
+	            });
+	            document.getElementsByClassName('Phone-arrow')[0].addEventListener('touchend', function (e) {
+	                nChangY = e.changedTouches[0].pageY;
+	                nChangX = e.changedTouches[0].pageX;
+	                if (nStartY - nChangY >= 20) {
+	                    $(".Phone-arrow").css("display", "none");
+	                }
+	            });
 	            $(window).scroll(function () {
 	                //PictureContent组件的监听动画
 	                var PictureContentTop = document.getElementById("tang_picture").offsetTop;
@@ -21512,6 +21540,11 @@
 	            return _react2.default.createElement(
 	                "div",
 	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "Phone-arrow" },
+	                    _react2.default.createElement("img", { src: "need_data/images/arrup.png", alt: "" })
+	                ),
 	                _react2.default.createElement(NavHeader, null),
 	                _react2.default.createElement(HeaderBanner, null),
 	                _react2.default.createElement(WelName, null),
@@ -21852,29 +21885,6 @@
 	            return _reactDom2.default.findDOMNode(document.getElementsByClassName(node)[0]);
 	        }
 	    }, {
-	        key: "componentWillMount",
-	        value: function componentWillMount() {
-	            var arr = ["img_1", "img_2", "img_3", "img_4", "img_5", "img_6", "img_7", "img_8", "img_9", "img_10", "img_11", "img_12"];
-	            var me = this;
-	            var innerH = innerHeight;
-	            if (innerH > 1000) {
-	                (function () {
-	                    var timerPhone = setInterval(function () {
-	                        {
-	                            me.animate(arr[i]).style.opacity = "1";
-	                        }
-	                        {
-	                            me.animate(arr[i]).style.bottom = "0";
-	                        }
-	                        i++;
-	                        if (i >= arr.length) {
-	                            clearInterval(timerPhone);
-	                        }
-	                    }, 300);
-	                })();
-	            }
-	        }
-	    }, {
 	        key: "componentDidMount",
 	        value: function componentDidMount() {
 	            var me = this;
@@ -21897,7 +21907,7 @@
 	                            }
 	                            i++;
 	                            if (i >= arr.length) {
-	                                clearInterval(timerPC);timer = null;
+	                                clearInterval(timerPC);timerPC = null;
 	                            }
 	                        }, 300);
 	                    })();
