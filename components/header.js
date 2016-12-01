@@ -580,7 +580,7 @@ class GoTop extends React.Component{
         return(
             <div className="react-GoTop">
                 <ul>
-                    <li className="glyphicon glyphicon-arrow-up" onClick={this.handleClick}>HOME</li>
+                    <li className="glyphicon glyphicon-arrow-up" onClick={this.handleClick}>TOP</li>
                 </ul>
             </div>
         )
