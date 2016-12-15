@@ -13,6 +13,12 @@
 </head>
 <body>
     <div id="app"></div>
+	<progress id="progressBar" value="0" max="100" style="width: 300px;"></progress>
+<span id="percentage"></span><span id="time"></span>
+<br /><br />
+<input type="file" id="file" name="myfile" />
+<input type="button" onclick="UpladFile()" value="上传" />
+<input type="button" onclick="cancleUploadFile()" value="取消" />
     <script src="bundle.js"></script>
     <script src="need_data/js/jquery.min.js"></script>
 	<script type="text/javascript">
